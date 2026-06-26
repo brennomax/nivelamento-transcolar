@@ -11,6 +11,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IEscolasService, EscolasService>();
+builder.Services.AddScoped<IRotasEscolaresService, RotasEscolaresService>();
 
 var app = builder.Build();
 
