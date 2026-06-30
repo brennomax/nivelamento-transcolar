@@ -12,6 +12,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IEscolasService, EscolasService>();
 builder.Services.AddScoped<IRotasEscolaresService, RotasEscolaresService>();
+builder.Services.AddScoped<IAlunosService, AlunosService>();
 
 var app = builder.Build();
 
